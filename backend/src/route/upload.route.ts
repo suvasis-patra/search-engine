@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { getUploadSignature } from "../service/cloudinary.service";
+import { getFileUploadSignature } from "../controller/upload.controller";
 
 export const uploadRouter = Router();
 
-uploadRouter.get("/signature", getUploadSignature);
+uploadRouter.get("/signature", getFileUploadSignature);
